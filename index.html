@@ -79,23 +79,23 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://chenyangqiqi.github.io/" target="_blank">Chenyang Qi</a><sup>1</sup></span>
+                <a href="#" target="_blank">Person</a><sup>1</sup></span>
                 <span class="author-block">
-                  <a href="http://vinthony.github.io/" target="_blank">Xiaodong Cun</a><sup>2</sup></span>
+                  <a href="#" target="_blank">Person</a><sup>2</sup></span>
                   <span class="author-block">
-                    <a href="https://yzhang2016.github.io" target="_blank">Yong Zhang</a><sup>2</sup>
+                    <a href="#" target="_blank">Person</a><sup>3</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://chenyanglei.github.io/" target="_blank">Chenyang Lei</a><sup>3</sup>
+                    <a href="#" target="_blank">Person</a><sup>4</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://xinntao.github.io/" target="_blank">Xintao Wang</a><sup>2</sup>
+                    <a href="#" target="_blank">Person</a><sup>5</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=4oXBp9UAAAAJ" target="_blank">Ying Shan</a><sup>2</sup>
+                    <a href="#" target="_blank">Person</a><sup>6</sup>
                   </span>
                   <span class="author-block">
-                    <a href="https://cqf.io/" target="_blank">Qifeng Chen</a><sup>1</sup>
+                    <a href="#" target="_blank">Person</a><sup>7</sup>
                   </span>
 
                   </div>
@@ -103,9 +103,9 @@
               </br>
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">
-                    <sup>1</sup> HKUST &nbsp;&nbsp;&nbsp;
-                    <sup>2</sup> Tencent AI Lab &nbsp;&nbsp;&nbsp;
-                    <sup>3</sup> CAIR, CAS </span>
+                    <sup>1</sup> University/Academy &nbsp;&nbsp;&nbsp;
+                    <sup>2</sup> Research Lab &nbsp;&nbsp;&nbsp;
+                    <sup>3</sup> Organization </span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span> -->
                   </div>
 
@@ -114,18 +114,18 @@
                       
                        <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/abslink" target="_blank"
+                    <a href="#" target="_blank"
                     class="external-link ">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>arxiv</span>
                   </a>
                 </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/git-repo-link" target="_blank"
+                    <a href="#" target="_blank"
                     class="external-link ">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -136,7 +136,7 @@
 
                 <!-- Video link -->
                 <span class="link-block">
-                  <a href="https://hkustconnect-my.sharepoint.com/:v:/g/personal/cqiaa_connect_ust_hk/EXKDI_nahEhKtiYPvvyU9SkBDTG2W4G1AZ_vkC7ekh3ENw?e=ficp9t" target="_blank"
+                  <a href="#" target="_blank"
                   class="external-link ">
                   <span class="icon">
                     <i class="fab fa-youtube"></i>
@@ -145,7 +145,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://huggingface.co/demon-in-huggingface"  target="_blank"
+                <a href="#"  target="_blank"
                    class="external-link">
                   <span class="icon">
                     <img src="./static/images/hf_black.png">
@@ -420,7 +420,7 @@
             However, since it contains enormous randomness in generation progress, it is still challenging to apply such models for real-world visual content editing, especially in videos. 
 In this paper, we propose <i style="color: #eb002a">research-name</research-name></i>, a zero-shot text-based editing method on real-world videos without per-prompt training or use-specific mask. 
 To edit videos consistently, we propose several techniques based on the pre-trained models. Firstly, in contrast to the straightforward DDIM inversion technique, our approach captures intermediate attention maps during inversion using source prompt<sup>1</sup>, which effectively retain both structural and motion information. These maps are directly fused in the editing process rather than generated during denoising. To further minimize semantic leakage of the source video, we then fuse self-attentions with a blending mask obtained by cross-attention features from the source prompt. Furthermore, we have implemented a reform of the self-attention mechanism in denoising UNet by introducing spatial-temporal attention to ensure frame consistency.
-Yet succinct, our method is the first one to show the ability of zero-shot text-driven video style and local attribute editing from the trained text-to-image model. We also have a better zero-shot shape-aware editing ability based on the <a href="https://tuneavideo.github.io/">One-shot text-to-video model</a>. Extensive experiments demonstrate our superior temporal consistency and editing capability than previous works.
+Yet succinct, our method is the first one to show the ability of zero-shot text-driven video style and local attribute editing from the trained text-to-image model. We also have a better zero-shot shape-aware editing ability based on the <a href="#">One-shot text-to-video model</a>. Extensive experiments demonstrate our superior temporal consistency and editing capability than previous works.
           </p>
         </div>
       </div>
@@ -515,54 +515,115 @@ Yet succinct, our method is the first one to show the ability of zero-shot text-
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video Attribute Editing Using Stable Diffusion</h2>
-      <div class="marquee-item">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/16_sq_eat_01_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <p class="text-white" style="font-size: 18px;" > Squirrel, Carrot ➜ <c> White mouse, Peanut </c> </p>
+      
+      <div class="attributeMain">
+        <!-- Attribute edit single -->
+        <div class="attribute_edit_single">
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/Minnas.mp4" type="video/mp4">
+            </video>
+            <p class="ownContent"> Lady Talking ➜</p>
+          </div>
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1/B_anime.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Anime Talking</p>
+          </div>
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1/B_lego.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Lego Talking</p>
+          </div>
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1/B_origami.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Origami Talking</p>
+          </div>
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1/B_robot.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Robot Talking</p>
+          </div>
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1/B_wood.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Wood Lady Talking</p>
+          </div>
+        </div>
+
+        <!-- Attribute edit single -->
+        <div class="attribute_edit_single">
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/typing_source-new.mp4" type="video/mp4">
+            </video>
+            <p class="ownContent"> Lad Typing ➜</p>
+          </div>
+  
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2/B_anime_1.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Anime Typing</p>
+          </div>
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2/B_lego.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Lego Typing</p>
+          </div>
+
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2/B_phraoh.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Pharaoh Typing</p>
+          </div>
+  
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2/B_gold.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Golden Lad typing</p>
+          </div>
+  
+          <!-- inner single -->
+          <div class="attribute_single_inner">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2/B_phraoh.mp4" type="video/mp4">
+            </video>
+            <p class="editContent"> Pharaoh Typing</p>
+          </div>
+        </div>
+
+        
       </div>
-      <div class="marquee-item">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/16_sq_eat_02_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <p class="text-white" style="font-size: 16px;" >Squirrel, Carrot ➜ <c> Rabbit, Eggplant</c> </p>
-      </div>
-      <div class="marquee-item">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/16_sq_eat_03_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <p class="text-white" style="font-size: 16px;" > Squirrel, Carrot ➜ <c> Robot mouse, Screwdriver</c> </p>
-      </div>
-      <div class="marquee-item">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/14_car_grass_tiger_corgin_01_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <p class="text-white"> Cat ➜ <c> A yellow cute leopard </c> </p>
-      </div>
-      <div class="marquee-item">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/14_car_grass_tiger_corgin_02_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <p class="text-white"> Cat ➜ <c> Black Cat, Grass... </c> </p>
-      </div>
-      <div class="marquee-item">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/14_car_grass_tiger_corgin_03_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <p class="text-white">Cat ➜ <c>Red Tiger</c> </p>
-      </div>
+      
+      
       <div class="marquee-item">
         <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
           <source src="static/videos/13_bear_tiger_leopard_lion_01_concat_result.mp4"
@@ -653,62 +714,275 @@ Yet succinct, our method is the first one to show the ability of zero-shot text-
 <section class="section hero">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3"> Comparsions </h2>
+      <h2 class="title is-3"> Comparisons </h2>
       <div class="marquee-item s-larger">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/20_car_posche_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-        <d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tune-A-Video&nbsp;&nbsp;&nbsp;&nbsp;Frame SDEdit&nbsp;&nbsp;&nbsp;&nbsp;Frame Null-Inv&nbsp;&nbsp;&nbsp;&nbsp;NLA + Null-Inv     </d>
-        <p class="text-white">Cat ➜ <c>Posche Car<sup>*</sup></c> </p>
+
+        <!-- Comparison single box -->
+        <div class="compare_video_list">
+
+          <!-- Original video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/Minnas.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphme">Input Video</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="12rem">
+              <source src="static/common_assets/results/sub1_compare/B_Van.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Our model</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="12rem">
+              <source src="static/common_assets/results/sub1_compare/B_Van_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">VidToMe</p>
+          </div>
+          
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="12rem">
+              <source src="static/common_assets/results/sub1_compare/B_Van.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 3</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="12rem">
+              <source src="static/common_assets/results/sub1_compare/B_Van_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 4</p>
+          </div>
+
+        </div>
+        <p class="text-white">Lady talking ➜ <c>anime style<sup>*</sup></c> </p>
       </div>
       <div class="marquee-item s-larger">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/21_car_watercolor_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-          <d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tune-A-Video&nbsp;&nbsp;&nbsp;&nbsp;Frame SDEdit&nbsp;&nbsp;&nbsp;&nbsp;Frame Null-Inv&nbsp;&nbsp;&nbsp;&nbsp;NLA + Null-Inv     </d>
-        <p class="text-white"><c> + Watercolor Painting </c> </p>
+        <!-- Comparison single box -->
+        <div class="compare_video_list">
+
+          <!-- Original video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/typing_source-new.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphme">Input Video</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_origami.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Our model</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_origami_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">VidToMe</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_origami.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 3</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_origami_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 4</p>
+          </div>
+
+        </div>
+        <p class="text-white">Lad typing ➜ <c>origami style<sup>*</sup></c> </p>
       </div>
       <div class="marquee-item s-larger">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/22_swan_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-          <d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tune-A-Video&nbsp;&nbsp;&nbsp;&nbsp;Frame SDEdit&nbsp;&nbsp;&nbsp;&nbsp;Frame Null-Inv&nbsp;&nbsp;&nbsp;&nbsp;NLA + Null-Inv     </d>
-        <p class="text-white">Swan ➜ <c> Swarovski Swan </c> </p>
+        <!-- Comparison single box -->
+        <div class="compare_video_list">
+
+          <!-- Original video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/wolf_source-new.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphme">Input Video</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_Crochet.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Our model</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_Crochet _base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">VidToMe</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_Crochet.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 3</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_Crochet _base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 4</p>
+          </div>
+
+        </div>
+        <p class="text-white">Fox video ➜ <c>crochet style<sup>*</sup></c> </p>
       </div>
       
       <div class="marquee-item s-larger">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/24_flamingo_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-          <d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tune-A-Video&nbsp;&nbsp;&nbsp;&nbsp;Frame SDEdit&nbsp;&nbsp;&nbsp;&nbsp;Frame Null-Inv&nbsp;&nbsp;&nbsp;&nbsp;NLA + Null-Inv     </d>
-        <p class="text-white">Swan ➜ <c>Pink flamingo<sup>*</sup></c> </p>
+        <!-- Comparison single box -->
+        <div class="compare_video_list">
+
+          <!-- Original video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/Minnas.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphme">Input Video</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1_compare/B_wood.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Our model</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1_compare/B_wood_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">VidToMe</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1_compare/B_wood.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 3</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub1_compare/B_wood_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 4</p>
+          </div>
+
+        </div>
+        <p class="text-white">Lady talking ➜ <c>Wodd style<sup>*</sup></c> </p>
       </div>
       <div class="marquee-item s-larger-4">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/25_surf_unkio_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-          <d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tune-A-Video&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frame SDEdit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frame Null-Inv </d>
-        <p class="text-white"> <c> + Ukiyo-e Style </c> </p>
+        <!-- Comparison single box -->
+        <div class="compare_video_list">
+
+          <!-- Original video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/typing_source-new.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphme">Input Video</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_skltn.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Our model</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_skltn_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">VidToMe</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub2_compare/B_skltn.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 3</p>
+          </div>
+
+        </div>
+        <p class="text-white">Lad typing ➜ <c>Skltn style<sup>*</sup></c> </p>
       </div>
      
       <div class="marquee-item s-larger-4">
-        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" class="lozad" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/27_train_shinkai_concat_result.mp4"
-            type="video/mp4">
-          sorry, your browser does not support HTML5 Videos.
-          </video>
-          <d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tune-A-Video&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frame SDEdit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frame Null-Inv </d>
-        <p class="text-white"> <c> + Makoto Shinkai Style </c> </p>
+        <!-- Comparison single box -->
+        <div class="compare_video_list">
+
+          <!-- Original video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/sources/wolf_source-new.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphme">Input Video</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_robot.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Our model</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_robot_base.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">VidToMe</p>
+          </div>
+
+          <!-- Edited video -->
+          <div class="compare_video_single">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="static/common_assets/results/sub3_compare/B_robot.mp4" type="video/mp4">
+            </video>
+            <p class="paragraphCom">Model 3</p>
+          </div>
+
+        </div>
+        <p class="text-white">Fox video ➜ <c>Robot style<sup>*</sup></c> </p>
       </div>
   </div>
 </div>
@@ -739,7 +1013,7 @@ Yet succinct, our method is the first one to show the ability of zero-shot text-
     <div class="container is-max-desktop content">
     <h2 class="title">Explanation</h2>
     <small>1. For better visualization, we only show the edited word in this page. Please check our paper and code for the whole source prompt. </small> <br/>
-    <small>2. Most of the results are directly edited from <a href="https://github.com/vinthony/deep-blind-watermark-removal">Stable diffusion v1.4</a>. We use one-shot video diffusion model (<a href="https://tuneavideo.github.io/">Tune-A-Video</a>) checkpoints for shape-aware editing, whose results are marked as *. </small> <br/>
+    <small>2. Most of the results are directly edited from <a href="#">Stable diffusion v1.4</a>. We use one-shot video diffusion model (<a href="#">Tune-A-Video</a>) checkpoints for shape-aware editing, whose results are marked as *. </small> <br/>
     <small>3. Our method does not require training a Tune-A-Video Model. </small>
     <h2 class="title">Acknowledgement</h2>
     <small>This project is supported by the National Key R&D Program of China under grant number 2022ZD0161501.
@@ -754,8 +1028,8 @@ Yet succinct, our method is the first one to show the ability of zero-shot text-
       <div class="column is-8">
         <div class="content">
           <p>
-            This page was built using the <a href="https://github.com/vinthony/project-page-template">modification version</a> of <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> from <a href="https://github.com/vinthony">vinthony</a>.
-            You are free to borrow this website. We just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This page was built using the <a href="#">modification version</a> of <a href="#" target="_blank">Academic Project Page Template</a> from <a href="#">vinthony</a>.
+            You are free to borrow this website. We just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="#" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 

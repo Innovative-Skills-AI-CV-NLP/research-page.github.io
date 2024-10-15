@@ -31,9 +31,6 @@ body {
 }
 
 
-.publication-title {
-}
-
 .publication-banner {
   max-height: parent;
 
@@ -47,8 +44,7 @@ body {
   object-fit: fit;
 }
 
-.publication-header .hero-body {
-}
+
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
@@ -70,8 +66,7 @@ body {
     font-weight: bolder;
 }
 
-.publication-authors {
-}
+
 
 .author-block {
   font-size: 16px;
@@ -79,12 +74,9 @@ body {
   display: inline-block;
 }
 
-.publication-banner img {
-}
 
-.publication-authors {
-  /*color: #4286f4;*/
-}
+
+
 
 .publication-video {
     position: relative;
@@ -104,8 +96,6 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
 
 .results-carousel {
   overflow: hidden;
@@ -194,7 +184,7 @@ a:after{
   bottom: 0;
   transition:top 200ms cubic-bezier(0, 0.8, 0.13, 1);
   /*background-color: rgba(225, 166, 121, 0.5);*/
-  background-color: rgba(255,211,30, 0.4);
+  background-color: rgb(14 253 249 / 23%);
 }
 .emojilink:after{
   background-color: rgba(255,211,30, 0.0) 
@@ -331,3 +321,70 @@ a:hover:after{
 .s-larger d{
   font-size: 16px;
 }
+
+/* New design update by md Anower start*/
+.compare_video_list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.compare_video_list .compare_video_single{
+  width: 20%;
+}
+.compare_video_single video{
+  height: 7.3rem;
+  object-fit: cover;
+}
+.attribute_edit_single{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1240px;
+  border-bottom: .28rem solid #FFA500;
+  margin-left: 10px;
+  margin-top: 0.7rem;
+  padding-bottom: 0.4rem;
+}
+.attribute_single_inner{
+  width: 16.66%;
+  height: 14rem;
+}
+.attribute_single_inner video{
+  height: 11rem;
+  width: 100%;
+  object-fit: cover;
+}
+.editContent{
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, .01);
+  font-weight: 600;
+  color: #eb002a;
+  font-size: .95rem;
+  letter-spacing: .5px;
+  text-align: center;
+}
+.ownContent{
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, .01);
+  font-weight: 700;
+  color: #4A4A4A;
+  font-size: 1rem;
+  text-align: center;
+}
+.marquee-item .paragraphme{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.marquee-item .paragraphCom{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.s-larger-4 .compare_video_single{
+  width: 25%;
+}
+.s-larger-4 .compare_video_single video{
+  height: 9rem;
+  width: 100%;
+}
+/* New design update by md Anower end*/
